@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!-- Font Awesome Glyphicons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  <!-- Chosen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+<style>
+  * {
+    font-weight: bold;
+  }
+
+  #match-img {
+    max-height: 400px;
+    max-width: 400px;
+    height: auto;
+    width: auto;
+  }
+  #errorImage {
+    max-height: 400px;
+    max-width: 400px;
+    height: auto;
+    width: auto;
+  }
+
+  #title {
+    font-size: 60px;
+  }
+</style>
+
+<body>
+
+  <div class="container">
+    <h1 class="lead font-weight-bold display-4" id="title">Survey Questions</h1>
+    <h3 class="font-weight-bold">About You</h3>
+    <h4 class="font-weight-bold">Name (Required)</h4>
+    <input type="text" class="form-control" placeholder="John Doe" id="name">
+    <h4 class="font-weight-bold">Link to Photo Image (Required)</h4>
+    <input type="link" class="form-control" id="photo">
+    <h4 class="font-weight-bold">Question 1</h4>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Your mind is always buzzing with unexplored ideas and plans.</label>
+      <select class="form-control" id="q1">
+        <option selected hidden value="">Select an option</option>
+        <option value="1">1 You Really Disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 You Really Agree</option>
+      </select>
+    </div>
+    <h4 class="font-weight-bold">Question 2</h4>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Generally speaking, you rely more on your experience than your
+        imagination.</label>
+      <select class="form-control" id="q2">
+        <option selected hidden value="">Select an option</option>
+        <option value="1">1 You Really Disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 You Really Agree</option>
+      </select>
+    </div>
+    <h4 class="font-weight-bold">Question 3</h4>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">You find it easy to stay relaxed and focused even when there is some
+        pressure.</label>
+      <select class="form-control" id="q3">
+        <option selected hidden value="">Select an option</option>
+        <option value="1">1 You Really Disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 You Really Agree</option>
+      </select>
+    </div>
+    <h4 class="font-weight-bold">Question 4</h4>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">You rarely do something just out of sheer curiosity.</label>
+      <select class="form-control" id="q4">
+        <option selected hidden value="">Select an option</option>
+        <option value="1">1 You Really Disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 You Really Agree</option>
+      </select>
+    </div>
+    <h4 class="font-weight-bold">Question 5</h4>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">People can rarely upset you.</label>
+      <select class="form-control" id="q5">
+        <option selected hidden value="">Select an option</option>
+        <option value="1">1 You Really Disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 You Really Agree</option>
+      </select>
+    </div>
+    <h4 class="font-weight-bold">Question 6</h4>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">It is often difficult for you to relate to other people’s feelings.</label>
+      <select class="form-control" id="q6">
+        <option selected hidden value="">Select an option</option>
+        <option value="1">1 You Really Disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 You Really Agree</option>
+      </select>
+    </div>
+    <h4 class="font-weight-bold">Question 7</h4>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">In a discussion, truth should be more important than people’s
+        sensitivities.</label>
+      <select class="form-control" id="q7">
+        <option selected hidden value="">Select an option</option>
+        <option value="1">1 You Really Disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 You Really Agree</option>
+      </select>
+    </div>
+    <h4 class="font-weight-bold">Question 8</h4>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">You rarely get carried away by fantasies and ideas.</label>
+      <select class="form-control" id="q8">
+        <option selected hidden value="">Select an option</option>
+        <option value="1">1 You Really Disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 You Really Agree</option>
+      </select>
+    </div>
+    <h4 class="font-weight-bold">Question 9</h4>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">You think that everyone’s views should be respected regardless of whether
+        they are supported by facts or not.
+      </label>
+      <select class="form-control" id="q9">
+        <option selected hidden value="">Select an option</option>
+        <option value="1">1 You Really Disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 You Really Agree</option>
+      </select>
+    </div>
+    <h4 class="font-weight-bold">Question 10</h4>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">You feel more energetic after spending time with a group of people.</label>
+      <select class="form-control" id="q10">
+        <option selected hidden value="">Select an option</option>
+        <option value="1">1 You Really Disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 You Really Agree</option>
+      </select>
+    </div>
+
+
+
+    <button type="submit" class="btn btn-primary" id="submit">
+      Submit
+    </button>
+    <a href="./api/friends">Api Friends Link |</a>
+
+
+    <div id="results-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title"><strong>Best Match</strong></h2>
+          </div>
+          <div class="modal-body">
+            <h2 id="match-name"></h2>
+            <img id="match-img" alt="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="error-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title"><strong>Please Fill Out Everything!</strong></h2>
+          </div>
+          <div class="modal-body">
+            <img id="errorImage" src="https://media.istockphoto.com/vectors/isolated-vector-illustration-a-strong-wild-bear-man-vector-id928247782?k=6&m=928247782&s=612x612&w=0&h=QL6syADAQav-bcYZ0kZsIxffOQwq_MC3b5wxK-3sSCA=">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      // Chosen CSS
+      var config = {
+        ".chosen-select": {},
+        ".chosen-select-deselect": {
+          allow_single_deselect: true
+        },
+        ".chosen-select-no-single": {
+          disable_search_threshold: 10
+        },
+        ".chosen-select-no-results": {
+          no_results_text: "Oops, nothing found!"
+        },
+        ".chosen-select-width": {
+          width: "95%"
+        }
+      };
+
+      for (var selector in config) {
+        $(selector).chosen(config[selector]);
+      }
+
+      // Capture the form inputs
+      $("#submit").on("click", function (event) {
+        event.preventDefault();
+
+        // Form validation
+        function validateForm() {
+          var isValid = true;
+          $(".form-control").each(function () {
+            if ($(this).val() === "") {
+              isValid = false;
+            }
+          });
+
+          $(".chosen-select").each(function () {
+
+            if ($(this).val() === "") {
+              isValid = false;
+            }
+          });
+          return isValid;
+        }
+
+        // If all required fields are filled
+        if (validateForm()) {
+          // Create an object for the user"s data
+          var userData = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            scores: [
+              $("#q1").val(),
+              $("#q2").val(),
+              $("#q3").val(),
+              $("#q4").val(),
+              $("#q5").val(),
+              $("#q6").val(),
+              $("#q7").val(),
+              $("#q8").val(),
+              $("#q9").val(),
+              $("#q10").val()
+            ]
+          };
+
+          // AJAX post the data to the friends API.
+          $.post("/api/friends", userData, function (data) {
+            // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+            random = Math.floor(Math.random() * data.length - 1)
+            
+            let lowest = 500;
+            let person = "";
+            let photo = "";
+          
+            for(let j = 0; j < data.length - 1; j++){
+              let difference = 0;
+            for (let i = 0; i < userData.scores.length; i++) {   
+              console.log(userData.name +" - "+ data[j].name)  
+              console.log(userData.scores[i]+" - "+ data[j].scores[i])
+              difference += Math.abs(parseFloat(userData.scores[i] - parseFloat(data[j].scores[i])))
+            }           
+            console.log("current lowest: " + lowest)
+            if (difference < lowest) {
+              lowest = difference;
+              person = data[j].name;
+              photo = data[j].photo;
+              console.log("new lowerst: " + lowest + " - " + data[j].name)
+            }
+          }
+
+
+
+            $("#match-name").text(person);
+            $("#match-img").attr("src", photo);
+
+            // Show the modal with the best match
+            $("#results-modal").modal("toggle");
+
+            $('#name').val("")
+            $('#photo').val("")
+            $("#q1").val("")
+            $("#q2").val("")
+            $("#q3").val("")
+            $("#q4").val("")
+            $("#q5").val("")
+            $("#q6").val("")
+            $("#q7").val("")
+            $("#q8").val("")
+            $("#q9").val("")
+            $("#q10").val("")
+             
+
+          });
+        } else {
+          $('#error-modal').modal("toggle");
+        }
+      });
+
+    </script>
+</body>
+
+</html>
