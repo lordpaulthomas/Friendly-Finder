@@ -50,7 +50,7 @@ closed, the recently added users will not persist.
 
 Link to Heroku Deployment of App
 ----------------------
-https://friendfinderpt.herokuapp.com/
+https://pt-friendfinder.herokuapp.com/
 
 
 * Clone Instructions
