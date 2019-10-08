@@ -59,7 +59,7 @@ https://friendfinderpt.herokuapp.com/
 - From a CLI, navigate to where you git cloned.
 - Use the command `npm init -y` to create package.json
 - Use the command `npm i express body-parser` to require the necessary modules
-- Use the command `node server.js` to start server (_app listening on PORT 3000_ should apprear)
+- Use the command `node server.js` to start server (_app listening on PORT 3000_ should appear in CLI)
 - Open a web browser and go to `https://localhost:3000`
 - From this page you can interact with the app locally
 
