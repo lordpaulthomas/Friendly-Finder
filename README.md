@@ -1,4 +1,4 @@
-# Friendly-Finder
+# Friend-Finder
 
 Licensing Information: READ LICENSE
 ---
@@ -49,7 +49,8 @@ Link to Heroku Deployment of App
 https://pt-friendfinder.herokuapp.com/
 
 
-* Clone Instructions
+**Clone Instructions
+----------
 
 - To run on localally you must first download `Node.js`
 - From a CLI, navigate to where you git cloned.
