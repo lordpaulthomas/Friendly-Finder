@@ -1,12 +1,12 @@
 # Friend-Finder
 
-Licensing Information: READ LICENSE
+##### Licensing Information: READ LICENSE
 ---
-Project source can be downloaded from https://github.com/lordpaulthomas/Friendly-Finder
+##### Project source can be downloaded from https://github.com/lordpaulthomas/Friendly-Finder
 ----
 Author
 -----------
-Paul Thomas
+# Paul Thomas
 
 File List
 ---------
