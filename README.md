@@ -40,7 +40,7 @@ Description of Friend Finder
 ------------------------------
 Friend finder is an application that has a user fill out a survey and then based
 on the survey's results, matches that user with the person in the database who
-answered the same questions the most similiarly.
+answered the same questions the most similarly.
 The current user is then added to the database and is a now a potential match for the
 next user.  
 
