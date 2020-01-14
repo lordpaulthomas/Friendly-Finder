@@ -38,11 +38,7 @@ server.js
 
 Description of Friend Finder
 ------------------------------
-Friend finder is an application that has a user fill out a survey and then based
-on the survey's results, matches that user with the person in the database who
-answered the same questions the most similarly.
-The current user is then added to the database and is a now a potential match for the
-next user.  
+Friend finder is an application that connects people by compatibility.  Users are prompted to fill out a survey, then they are shown who their best match is based on the answers given to the survey.  The current user is then added to the database and is a now a potential match for the next user.  
 
 Given that this app is not actually attached to a database, whenever the page is
 closed, the recently added users will not persist.
